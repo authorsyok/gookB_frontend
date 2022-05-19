@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자손선택자</title>
+    <style>
+        #header > h1 {
+            color: red;
+        }
+
+        #header >ul > li {
+            color: orange;
+        }
+
+        /* tbody 안넣으면 적용되지 않는다*/
+        table > tbody > tr > th {
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <h1>Header h1</h1>
+        <div>
+            <h1>Div h1</h1>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </div>
+    <table border="1">
+        <tr>
+            <th>성명</th>
+            <th>지역</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>부산</td>
+        </tr>
+    </table>
+</body>
+</html>

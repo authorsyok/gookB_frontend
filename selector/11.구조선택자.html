@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조선택자</title>
+    <style>
+        
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        /*홀짝만 알면 되는경우, 홀수면 odd, 짝수면 even*/
+        /*그게 아니라면 2n+1, 2n으로*/
+        /*만약 2행 5열에서 5행 2열로 바뀐다면 2n -> 5n으로*/
+        li:nth-child(odd) { 
+            background-color: tomato;
+        }
+        li:nth-child(even){
+            background: yellowgreen;
+        }
+        li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+        li:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: all 0.7s;
+        }
+        li:first-child > a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">First</a></li>
+        <li><a href="">Second</a></li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+</body>
+</html>

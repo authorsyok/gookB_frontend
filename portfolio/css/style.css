@@ -13,7 +13,7 @@ h1 {
 }
 
 h1.shadow {
-    text-shadow: 2px 2px 0 pink;
+    text-shadow: 2px 2px 0 rgb(211, 159, 167);
     text-align: center;
     margin-bottom: 60px;
 }
@@ -22,8 +22,15 @@ h1.shadow {
 header {
     text-align: center;
     padding-top: 10px;
-    background: linear-gradient(to bottom, #d8d8d8, #d8d8d8 191px, #000000 191px, #000000);
+    background: linear-gradient(to bottom, #ffffff, #ffffff 191px, #000000 191px, #000000);
 }
+
+.myImage {
+  width: 135px;
+  height: 170px;
+  object-fit: cover;
+}
+
 
 header ul {
     width: 1200px;
@@ -42,7 +49,7 @@ a:visited {
     display: block;
     height: 48px;
     line-height: 48px;
-    border-right: 1px solid #aeaeae;
+    border-right: 1px solid #b3b2b2;
 }
 
 header ul li:nth-of-type(5) a {
@@ -58,7 +65,7 @@ header ul li a:hover {
 /* 비주얼 영역 */
 .visual_area {
     height: 630px;
-    background: url(../images/main-image.jpg);
+    background: url(../images/main-image2.jpg);
     background-position: center;
     position: relative;
     margin-bottom: 80px;
@@ -101,7 +108,11 @@ header ul li a:hover {
     float: left;
     border-radius: 50%;
     margin-right: 60px;
-    margin-top: -20px
+    margin-top: -20px;
+    width: 250px;
+    height: 270px;
+    object-fit: cover;
+    
 }
 
 .intro>div ul li {
@@ -154,15 +165,15 @@ ul.port_wrap li:nth-of-type(3) {
 }
 
 ul.port_wrap li:nth-of-type(1) {
-    background-image: url(../images/easter-01.jpg);
+    background-image: url(../images/egg1.jpg);
 }
 
 ul.port_wrap li:nth-of-type(2) {
-    background-image: url(../images/easter-02.jpg);
+    background-image: url(../images/egg2.jpg);
 }
 
 ul.port_wrap li:nth-of-type(3) {
-    background-image: url(../images/easter-03.jpg);
+    background-image: url(../images/egg3.jpg);
 }
 
 ul.port_wrap li:hover {

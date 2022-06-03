@@ -1,97 +1,225 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
 
-<body>
-    <header>
-        <img class="myImage" src="images/logo2.png" alt="">
-        <ul>
-            <li><a href="">MAIN</a></li>
-            <li><a href="">INTRODUCE</a></li>
-            <li><a href="">DESIGN</a></li>
-            <li><a href="">VIDEO</a></li>
-            <li><a href="">CONTACT-US</a></li>
-        </ul>
-    </header>
-    <div class="visual_area">
-        <div>
-            <h1>DIGITAL CONVERGENCE</h1>
-            <p><mark><i>JAVA + SPRING + FRAMEWORK</i></mark></p>
-        </div>
-    </div>
-    <section class="intro">
-        <h1 class="shadow">INTRODUCE</h1>
-        <div>
-            <img src="images/iam2.jpg" alt="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img class="myImage" src="images/logo2.png" alt="">
             <ul>
-                <li><span>이름</span>장우석</li>
-                <li><span>연락처</span>010-1234-5678</li>
-                <li><span>이메일</span>hahahha@naver.com</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi voluptatum voluptatem ipsa
-                    nisi aliquam itaque placeat rerum tempore quibusdam ducimus consequatur libero iste exercitationem
-                    temporibus, soluta illo ex pariatur?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum sequi voluptatum voluptatem ipsa nisi aliquam itaque placeat rerum tempore quibusdam ducimus
-                    consequatur libero iste exercitationem temporibus, soluta illo ex pariatur?</li>
+                <li>
+                    <a href="">MAIN</a>
+                </li>
+                <li>
+                    <a href="">INTRODUCE</a>
+                </li>
+                <li>
+                    <a href="">DESIGN</a>
+                </li>
+                <li>
+                    <a href="">VIDEO</a>
+                </li>
+                <li>
+                    <a href="">CONTACT-US</a>
+                </li>
             </ul>
-        </div>
-    </section>
-    <section class="portfolio">
-        <h1 class="shadow">DESIGN</h1>
-        <ul class="port_wrap">
-            <li>
-                <div class="div_black">
-                    <strong>포트폴리오 01</strong>
-                    <span></span>
-                    <p>포트폴리오입니다.</p>
-                </div>
-            </li>
-            <li>
-                <div class="div_black">
-                    <strong>포트폴리오 02</strong>
-                    <span></span>
-                    <p>포트폴리오입니다.</p>
-                </div>
-            </li>
-            <li>
-                <div class="div_black">
-                    <strong>포트폴리오 03</strong>
-                    <span></span>
-                    <p>포트폴리오입니다.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="video">
-        <h1 class="shadow">VIDEO</h1>
-        <div>
-            <div class="video_wrap">
-                <p align="middle"><iframe width="896" height="504" src="https://www.youtube.com/embed/IrxHQsMPr3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-                </div>
-        </div>
-    </section>
+        </header>
 
-    <footer>
-        <ul class="footer_menu">
-            <li><a href="">menu1</a></li>
-            <li><a href="">menu2</a></li>
-            <li><a href="">menu3</a></li>
-            <li><a href="">menu4</a></li>
-            <li><a href="">menu5</a></li>
-            <li><a href="">menu6</a></li>
-            <li><a href="">menu7</a></li>
-        </ul>
-        <p>Copyright&copy; &nbsp;&nbsp;&nbsp;&nbsp;2022 Greenart All Rights Reserved</p>
-        <address>부산 부산진구 중앙대로 688 한준빌딩 2층</address>
-    </footer>
-</body>
+        <div id="visual_area">
+            <div class="bx-wrapper" style="max-width: 100%;">
+                <div
+                    class="bx-viewport"
+                    style="width: 100%; overflow: hidden; position: relative; height: 630px;">
+                    <ul
+                        class="slider"
+                        style="width: 100%; position: relative;">
+                        <li
+                            class="slide-three bx-clone"
+                            style="float: left; list-style: none; position: relative; width: 133px;"
+                            aria-hidden="true">
+                            <div class="textbox">
+                                <h1>DIGITAL CONVERGENCE</h1>
+                                <p>
+                                    <span>JAVA + SPRING + FRAMEWORK</span></p>
+                            </div>
+                        </li>
+                        <li
+                            class="slide-one"
+                            style="float: left; list-style: none; position: relative; width: 150px;"
+                            aria-hidden="false">
+                            <div class="textbox">
+                                <h1>DIGITAL CONVERGENCE</h1>
+                                <p>
+                                    <span>JAVA + SPRING + FRAMEWORK</span></p>
+                            </div>
+                        </li>
+                        <li
+                            class="slide-two"
+                            aria-hidden="true"
+                            style="float: left; list-style: none; position: relative; width: 133px;">
+                            <div class="textbox">
+                                <h1>DIGITAL CONVERGENCE</h1>
+                                <p>
+                                    <span>JAVA + SPRING + FRAMEWORK</span></p>
+                            </div>
+                        </li>
+                        <li
+                            class="slide-three"
+                            style="float: left; list-style: none; position: relative; width: 133px;"
+                            aria-hidden="true">
+                            <div class="textbox">
+                                <h1>DIGITAL</h1>
+                                <h1>CONVERGENCE</h1>
+                                <p>
+                                    <span>JAVA + SPRING + FRAMEWORK</span></p>
+                            </div>
+                        </li>
+                        <li
+                            class="slide-one bx-clone"
+                            style="float: left; list-style: none; position: relative; width: 133px;"
+                            aria-hidden="true">
+                            <div class="textbox">
+                                <h1>DIGITAL</h1>
+                                <h1>CONVERGENCE</h1>
+                                <p>
+                                    <span>JAVA + SPRING + FRAMEWORK</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bx-controls bx-has-controls-direction bx-has-pager">
+                    <div class="bx-controls-direction">
+                        <a class="bx-prev" href="">Prev</a>
+                        <a class="bx-next" href="">Next</a>
+                    </div>
+                    <div class="bx-pager bx-default-pager">
+                        <div class="bx-pager-item">
+                            <a href="" data-slide-index="0" class="bx-pager-link active">1</a>
+                        </div>
+                        <div class="bx-pager-item">
+                            <a href="" data-slide-index="1" class="bx-pager-link">2</a>
+                        </div>
+                        <div class="bx-pager-item">
+                            <a href="" data-slide-index="2" class="bx-pager-link">3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="intro">
+            <h1 class="shadow">INTRODUCE</h1>
+            <div>
+                <img src="images/iam2.jpg" alt="">
+                <ul>
+                    <li>
+                        <span>이름</span>장우석</li>
+                    <li>
+                        <span>연락처</span>010-1234-5678</li>
+                    <li>
+                        <span>이메일</span>hahahha@naver.com</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi
+                        voluptatum voluptatem ipsa nisi aliquam itaque placeat rerum tempore quibusdam
+                        ducimus consequatur libero iste exercitationem temporibus, soluta illo ex
+                        pariatur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi
+                        voluptatum voluptatem ipsa nisi aliquam itaque placeat rerum tempore quibusdam
+                        ducimus consequatur libero iste exercitationem temporibus, soluta illo ex
+                        pariatur?</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <h1 class="shadow">DESIGN</h1>
+            <ul class="port_wrap">
+                <li>
+                    <div class="div_black">
+                        <strong>포트폴리오 01</strong>
+                        <span></span>
+                        <p>포트폴리오입니다.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="div_black">
+                        <strong>포트폴리오 02</strong>
+                        <span></span>
+                        <p>포트폴리오입니다.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="div_black">
+                        <strong>포트폴리오 03</strong>
+                        <span></span>
+                        <p>포트폴리오입니다.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="video">
+            <h1 class="shadow">VIDEO</h1>
+            <div>
+                <div class="video_wrap">
+                    <p align="middle">
+                        <iframe
+                            width="896"
+                            height="504"
+                            src="https://www.youtube.com/embed/IrxHQsMPr3Q"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <ul class="footer_menu">
+                <li>
+                    <a href="">menu1</a>
+                </li>
+                <li>
+                    <a href="">menu2</a>
+                </li>
+                <li>
+                    <a href="">menu3</a>
+                </li>
+                <li>
+                    <a href="">menu4</a>
+                </li>
+                <li>
+                    <a href="">menu5</a>
+                </li>
+                <li>
+                    <a href="">menu6</a>
+                </li>
+                <li>
+                    <a href="">menu7</a>
+                </li>
+            </ul>
+            <p>Copyright&copy; &nbsp;&nbsp;&nbsp;&nbsp;2022 Greenart All Rights Reserved</p>
+            <address>부산 부산진구 중앙대로 688 한준빌딩 2층</address>
+        </footer>
+        <script>
+            $(document).ready(function () {
+                $('.slider').bxSlider({
+                    auto: true, pause: 2000,
+                    //controls: false, pager: false
+                });
+            });
+        </script>
+    </body>
 
 </html>

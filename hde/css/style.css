@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 a {
@@ -57,6 +56,7 @@ strong {
     position: relative;
 }
 
+
 .visual_area li {
     height: 738px;
 }
@@ -82,7 +82,62 @@ strong {
     transform: translateX(-50%);
     line-height: 1.9;
     font-weight: bold;
-    text-align: cener;
+    text-align: center;
+    /* color: #333; */
+}
+
+/* bx controls */
+.bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 40px;
+    height: 76px;
+    opacity: 0.4;
+    transition: all .3s;
+    text-indent: -9999px;
+}
+
+.bx-controls-direction a:hover {
+    opacity: .9;
+}
+
+.bx-controls-direction .bx-prev {
+    background: url(../images/main_arrow_left.png);
+    left: 50px;
+}
+
+.bx-controls-direction .bx-next {
+    background: url(../images/main_arrow_right.png);
+    right: 50px;
+}
+
+.bx-pager {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.bx-pager div {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.bx-pager div a {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #aaa;
+    border-radius: 4px;
+    font-size: 0;
+}
+
+.bx-pager div a.active {
+    background-color: #fff;
+    width: 40px;
+    transition: all .3s;
 }
 
 .contents {
@@ -112,13 +167,92 @@ strong {
     line-height: 1.4;
 }
 
+/* 찾아오시는길 */
+.location_info {
+    min-width: 1200px;
+    background-color: #9cc15c;
+    height: 700px;
+    position: relative;
+}
 
+.location_info>img {
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
 
+.location_info>div {
+    position: absolute;
+    left: 56%;
+    top: 160px;
+}
 
+.location_info>div strong {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
 
+.location_info>div>span {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 45px;
+}
 
+.location_info>div p {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
 
-/* FOOTER */
+.location_info>div ul {
+    margin-bottom: 80px;
+}
+
+.location_info>div ul li {
+    color: #fff;
+    margin: 7px 0;
+}
+
+.location_info>div ul li span {
+    display: inline-block;
+    width: 110px;
+}
+
+.location_info>div a {
+    display: inline-block;
+    background-color: #414042;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+/* 인포메이션 */
+.inform_area {
+    background-color: #414042;
+    padding: 50px 0 45px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.inform_area ul.gnb_depth1>li {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 30px;
+    padding: 15px;
+    border-left: 1px solid #646464;
+}
+
+.inform_area .depth1_links {
+    display: block;
+    margin-bottom: 30px;
+    color: #88ce0f;
+}
+
+.gnb_depth2 a {
+    color: #fff;
+}
+
 footer {
     color: #fff;
     text-align: center;
@@ -126,4 +260,5 @@ footer {
     padding: 30px;
     line-height: 1.5;
     background-color: #414042;
+
 }

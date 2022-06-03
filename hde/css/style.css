@@ -1,0 +1,129 @@
+
+@charset "utf-8";
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#main_header {
+    border: 1px solid #aaa;
+}
+
+#main_header .gnb_box {
+    width: 1200px;
+    height: 78px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main_header ul.gnb_depth1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#main_header ul.gnb_depth1 li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#main_header ul.gnb_depth1 .depth1_links {
+    font-weight: bold;
+    display: inline-block;
+    line-height: 78px;
+}
+
+#main_header ul.gnb_depth1 .depth1_links::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: yellowgreen;
+    margin-top: -5px;
+    display: none;
+}
+
+#main_header ul.gnb_depth1 li:hover .depth1_links::after {
+    display: block;
+}
+
+.visual_area {
+    height: 738px;
+    /* background: url(../images/slide/main_slide1.jpg) center top no-repeat; */
+    position: relative;
+}
+
+.visual_area li {
+    height: 738px;
+}
+
+.visual_area li.slide-one {
+    background: url(../images/slide/main_slide1.jpg);
+}
+
+.visual_area li.slide-two {
+    background: url(../images/slide/main_slide2.jpg);
+    color: white;
+}
+
+.visual_area li.slide-three {
+    background: url(../images/slide/main_slide3.jpg);
+    color: white;
+}
+
+.visual_area p {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.9;
+    font-weight: bold;
+    text-align: cener;
+}
+
+.contents {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.contents_list {
+    display: table;
+    width: 100%;
+}
+
+.contents_list li {
+    display: table-cell;
+    text-align: center;
+}
+
+.contents_list li strong {
+    display: block;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.contents_list li p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid #646464;
+    padding: 30px;
+    line-height: 1.5;
+    background-color: #414042;
+}

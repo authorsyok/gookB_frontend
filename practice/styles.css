@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+#gnb {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#gnb ul li {
+    float: left; 
+    background-color: teal;
+}
+
+#gnb ul li li {
+    text-align: left;
+}
+
+#gnb ul li li li a {
+    font-size: 15px; 
+    color: #898d92;
+}
+
+#gnb ul li.d-1 {
+	width: 150px; 
+    position: relative;
+    padding-top: 30px; 
+    border-right: 2px solid white;
+}
+
+#gnb .dep-1 {
+	position: absolute; 
+    width: 100%; 
+    height: 0px; 
+    background: rgba(0,0,0, .8);
+}
+
+
+#gnb .dep-1 ul li ul {
+    padding-top: 10px;
+}
+
+#gnb .dep-1 ul li li {
+    width: 100%; 
+    padding: 2px 0; 
+    position: static; 
+    line-height: 1.3em;
+}
+

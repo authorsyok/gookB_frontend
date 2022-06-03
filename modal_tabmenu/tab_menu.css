@@ -1,0 +1,53 @@
+
+.tab_content {
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: red;
+    color: white;
+}
+
+label {
+    display: block;
+    float: left;
+    width: 33.3333%;
+    padding: 15px;
+    background-color: #ccc;
+    color: #999;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.conbox {
+    /* height: 200px; */
+    min-height: 200px;
+    /*길이가 늘어나면 자동으로 늘어남*/
+    background-color: #aaa;
+    display: none;
+}
+
+input[id="tab01"]:checked ~ .con1 {
+    display: block;
+    background-color: yellow;
+}
+input[id="tab02"]:checked ~ .con2 {
+    display: block;
+    background-color: tomato;
+}
+input[id="tab03"]:checked ~ .con3 {
+    display: block;
+    background-color: teal;
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+    background-color: skyblue;
+    height: 1500px;
+    margin-top: 50px;
+}

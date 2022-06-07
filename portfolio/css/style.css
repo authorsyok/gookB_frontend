@@ -183,8 +183,7 @@ header ul li a:hover {
     margin-top: -20px;
     width: 250px;
     height: 270px;
-    object-fit: cover;
-    
+    object-fit: cover; 
 }
 
 .intro>div ul li {

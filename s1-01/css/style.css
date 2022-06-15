@@ -2,6 +2,48 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+header .cons .inner {
+    display: flex; /*NEW*/
+    justify-content: space-between;
+}
+
+header .cons .title { 
+    display:  flex;
+    flex-direction: column;
+}
+
+header .cons .cons_form {
+    display: flex;
+    align-items: center;
+}
+
+header .cons .cons_form form {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .inner2 {
+    display: flex; 
+    justify-content: center;
+}
+
+.con_area {
+    margin-bottom: 150px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_area ul.con_box {
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+}
+
+.con_area ul.con_box li {
+    display: flex;
+    align-items: center;
+}
+
 input[id="popup"] {
     display: none;
 }

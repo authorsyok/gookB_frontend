@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 대표 속성: justify-content - 주축 정렬 */
+        .flex_container {
+            background-color: #ccc;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            /*중앙에*/
+            justify-content: space-around;
+            justify-content: space-evenly;
+            /*모두 같은 여백*/
+        }
+
+        .flex_item {
+            width: 200px;
+            height: 100px;
+            background-color: teal;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_item">1</div>
+        <div class="flex_item">2</div>
+        <div class="flex_item">3</div>
+        <div class="flex_item">4</div>
+    </div>
+</body>
+</html>

@@ -160,6 +160,7 @@ header ul li a:hover {
     width: 10px;
     height: 8px;
     border-radius: 4px;
+    background-color: white;
     font-size: 0;
 }
 
@@ -174,6 +175,7 @@ header ul li a:hover {
     width: 1200px;
     height: 500px;
     margin: 0 auto;
+    padding-top: 80px;
 }
 
 .intro>div img {
@@ -223,93 +225,92 @@ ul.port_wrap li {
     height: 560px;
     margin-right: 5%;
     box-sizing: border-box;
-    border: 1px solid #dadada;
-    transition: all .7s;
+    border: 0;
+    transition: all 2s;
     cursor: pointer;
     overflow: hidden;
     background-size: auto 100%;
     background-position: center;
 }
 
-ul.port_wrap li:nth-of-type(3) {
-    margin: 0;
-}
 
-ul.port_wrap li:nth-of-type(1) {
+ul.port_wrap .slider_01 {
     background-image: url(../images/egg1.jpg);
 }
-
-ul.port_wrap li:nth-of-type(2) {
+ul.port_wrap .slider_02 {
     background-image: url(../images/egg2.jpg);
 }
-
-ul.port_wrap li:nth-of-type(3) {
+ul.port_wrap .slider_03 {
+    margin: 0;
     background-image: url(../images/egg3.jpg);
 }
 
+/* ul.port_wrap>li:nth-of-type(3n - 2) {
+    background-image: url(../images/001.jpg);
+}
+ul.port_wrap>li:nth-of-type(3n - 1) {
+    background-image: url(../images/002.jpg);
+}
+ul.port_wrap>li:nth-of-type(3n) {
+    margin: 0;
+    background-image: url(../images/003.jpg);
+} */
+
 ul.port_wrap li:hover {
-    background-size: auto 120%;
+    background-size : auto 150%
 }
 
-ul.port_wrap li .div_black {
+.portfolio ul li .div_black {
     height: 560px;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: all 1s;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
     position: relative;
 }
-
-ul.port_wrap li:hover .div_black {
-    opacity: 1;
-}
-
-ul.port_wrap li .div_black strong {
+.portfolio ul li .div_black strong {
     position: absolute;
+    color: #ffffff;
     top: 400px;
+    font-size: 50px;
     left: -100%;
     opacity: 0;
-    transition: all .7s;
+    transition: all 1s;
     font-weight: bold;
-    font-size: 48px;
 }
-
-ul.port_wrap li:hover .div_black strong {
+.portfolio ul li:hover .div_black strong {
+    left: 20px;
     opacity: 1;
-    left: 24px;
 }
 
-ul.port_wrap li .div_black span {
+.portfolio ul li .div_black span {
     display: block;
+    position: absolute;
     width: 1px;
     height: 1px;
-    background-color: #fff;
-    position: absolute;
+    opacity: 0;
     top: 460px;
     left: 24px;
-    opacity: 0;
-    transition: all .5s;
-    transition-delay: .4s;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+    background-color: #ffffff;
 }
-
-ul.port_wrap li:hover .div_black span {
+.portfolio ul li:hover .div_black span {
     width: calc(100% - 48px);
     opacity: 1;
 }
-
-ul.port_wrap li .div_black p {
+.portfolio ul li p {
+    display: block;
     position: absolute;
+    color: #ffffff;
     top: 480px;
     left: 24px;
     opacity: 0;
-    ;
+}
+.portfolio ul li:hover p {
+    opacity: 1;
+    transition: all 1s;
+    transition-delay: .5s;
 }
 
-ul.port_wrap li:hover .div_black p {
-    opacity: 1;
-    transition: all .3s;
-    transition-delay: .9s;
-}
 
 /* 비디오 */
 .video {

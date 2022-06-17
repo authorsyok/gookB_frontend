@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {font-family: 'Noto Sans KR', sans-serif; font-weight: 100; background-color: #282c34;}
+a {color: inherit; text-decoration: none;}
+h1 {font-size: 2em; font-weight: bold;}
+h2 {font-size: 1.875em; font-weight: bold;}
+h3 {font-size: 1.25em; font-weight: bold;}
+
+#wrap {width: 1140px; margin: 0 auto;}
+header {width: 100%; padding: 40px 0; text-align: center; color: white;}
+header a {color: white;}
+header .photo {width: 250px; height: 250px; border-radius: 50%; margin: 0 auto; overflow: hidden; border: 12px solid rgba(0, 0, 0, .3);}
+header .photo img {width: 100%;}
+header ul {margin: 20px 0; line-height: 1.5;}
+header ul li {font-size: 22px; margin: 0 5px;}
+
+header dl {width: 380px; margin: 0 auto; line-height: 1.5;}
+header dl dt {font-size: 28px; font-weight: bold;}
+header dl dd {font-size: 20px; width: 50%; float: left; text-align: left;}
+header dl dd img {margin-right: 5px;}
+header .resume a {display: inline-block; width: 400px; height: 40px; line-height: 40px; margin-top: 32px; border-radius: 20px; background-color: #fff; font-size: 18px; color: #333; font-weight: 700; box-shadow: 1px 1px 3px yellowgreen, -1px -1px 3px yellowgreen;}
+
+/* 포트폴리오 */
+#portfolio_wrap {width: 100%; border-radius: 50px; overflow: hidden; background-color: #ccc;}
+#portfolio_wrap .main_visual {height: 250px; margin-bottom: 50px; background: url(../images/main_image.jpg) center top no-repeat; overflow: hidden;}
+#portfolio_wrap .main_visual h2, h3 {text-align: center; margin: 20px 0;}
+#portfolio_wrap .main_visual h2 {font-size: 40px; padding-top: 50px; text-shadow: 1px 1px 1px #65c4ea;}
+#portfolio_wrap .main_visual h3 {font-weight: lighter; letter-spacing: 3.3px;}
+#portfolio_wrap .main_visual mark {background-color: yellowgreen; font-style: italic;}
+
+.video_wrap {display: flex; flex-wrap: wrap; justify-content: space-around;}
+.video_wrap div {width: 43%; border-radius: 30px; margin: 15px 0; background-color: white; overflow: hidden; transition: 0.5s;}
+.video_wrap div:hover {box-shadow: 0 0 20px rgba(0, 0, 0, .3);}
+.video_wrap a {display: block; width: 100%;}
+.video_wrap div img {width: 100%;}
+.video_wrap dl {padding: 20px; text-align: center;}
+.video_wrap dl dt {font-size: 25px; font-weight: bold; margin-bottom: 10px;}
+.video_wrap em {display: block; padding-bottom: 10px;}
+
+/* 푸터 */
+footer {height: 200px; line-height: 100px; margin: 25px 0 12px; background-color: #eee; border-radius: 50px; text-align: center;}
+footer p {color: #333; font-size: 18px;}
+footer img {margin: 0 5px;}
+
+/* 화면너비 0-1240px */
+@media (max-width: 1240px) {
+    #wrap {width: 96%;}
+    .video_wrap div {width: 300px; height: 300px; border-radius: 150px;}
+    .video_wrap dd em {display: none;}
+}
+
+@media (max-width: 960px) {
+    #wrap {width: 100%;}
+    #portfolio_wrap {border-radius: 0;}
+    #portfolio_wrap .main_visual {height: 100px; margin-bottom: 20px;}
+    #portfolio_wrap .main_visual h2 {padding-top: 25px;}
+    .video_wrap div {width: 48%; border-radius: 20px;}
+    .video_wrap div p {height: 182px; overflow: hidden;}
+    .video_wrap dt {margin-top: 15px;}
+    footer {height: 100px; margin: 1px 0 12px; border-radius: 0;}
+    footer p:nth-of-type(2) {line-height: 100px;}
+    footer p:nth-of-type(2) img {vertical-align: middle;}
+}
+
+@media (max-width: 540px) {
+    header {padding-bottom: 12px;}
+    header .photo {margin: 100px auto 20px;}
+    header ul {position: absolute; top: 15px; left: 50%; transform: translateX(-50%);}
+    header ul li {font-size: 28px; font-weight: 500;}
+    header ul li:nth-of-type(2) {font-size: 22px;}
+    header ul li span {display: none;}
+
+    header .resume a {width: 100%; height: 80px; line-height: 80px; margin-top: 32px; border-radius: 0; background-color: #ccc; font-size: 24px; box-shadow: none;}
+    .video_wrap div {width: 100%; height: 200px; margin: 5px 0; border-radius: 0; position: relative;}
+    .video_wrap div p {height: 200px;}
+    .video_wrap div p img {width: auto; height: 200px;}
+    .video_wrap dl {width: 30%; height: 200px; position: absolute; top: 0; right: 0; background-color: white; padding: 0;}
+    .video_wrap dl dt {margin-top: 55px;}
+    .video_wrap dl em {display: block;}
+}

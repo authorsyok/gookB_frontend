@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mobile</title>
+        <style>
+            * { margin: 0;  padding: 0; box-sizing: border-box;}
+            a { color: black; line-height: 1.5;}
+            li {list-style-type: none;}
+            h1 { font-size: 25px; padding: 10px; color: #fff;}
+            h2 {font-size: 20px;}
+            .clear:after { content: ""; display: block; clear: both;}
+            body {background: #fff;}
+            header {height: 150px; line-height: 150px; background: rgb(28, 137, 180);}
+            #container {background-color: rgb(177, 216, 231)}
+
+            .lnb li {margin: 10px; padding: 10px; background: rgb(103, 195, 231);}
+            .content {padding: 20px;}
+            .ext {margin: 10px; padding: 20px; background: rgb(98, 203, 245);}
+            footer {height: 150px; line-height: 150px; padding: 10px; color: white; background: #2751c5;}
+
+            @media all and (min-width: 768px) {
+                .lnb {float: left; width: 25%;}
+                .content {float: left; width: 75%;}
+                .aside {clear: both;}
+            }
+
+            @media all and (min-width: 1025px) {
+                #wrap{max-width: 1280px; margin: 0 auto;}
+                .lnb {float: left; width: 20%;}
+                .content {float: left; width: 50%; height: 500px;}
+                .aside {clear: none; float: right; width: 30%;} 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>웹 디자인</h1>
+            </header>
+
+            <div id="container" class="clear">
+                <div class="lnb">
+                    <ul>
+                        <li><a href="#">반응형 웹</a></li>
+                        <li><a href="#">적응형 웹</a></li>
+                        <li><a href="#">웹 접근성</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>반응형 웹</h2>
+                    <ul>
+                        <li><a href="#">모바일 퍼스트</a></li>
+                        <li><a href="#">뷰포트</a></li>
+                        <li><a href="#">요소의 너비</a></li>
+                        <li><a href="#">부모 요소의 너비</a></li>
+                        <li><a href="#">가변 값</a></li>
+                        <li><a href="#">요소</a></li>
+                        <li><a href="#">고정 그리드</a></li>
+                        <li><a href="#">가변 그리드</a></li>
+                        <li><a href="#">높이 값</a></li>
+                        <li><a href="#">가변 글꼴</a></li>
+                        <li><a href="#">미디어 쿼리</a></li>
+                        <li><a href="#">크롬 검사기 활용</a></li>
+                    </ul>
+                </div>
+                <div class="aside">
+                    <ul class="ext">
+                        <li>
+                            <h2>w3schools.com</h2>
+                            <a href="#">W3Schools Online Web Tutorials</a>
+                        </li>
+                        <li>
+                            <h2>w3schools.com</h2>
+                            <a href="#">W3Schools Online Web Tutorials</a>
+                        </li>
+                        <li>
+                            <h2>w3schools.com</h2>
+                            <a href="#">W3Schools Online Web Tutorials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <p>&copy;2021 Web Design. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

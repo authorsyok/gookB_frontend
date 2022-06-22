@@ -5,8 +5,18 @@
 a {color: inherit; text-decoration: none;}
 body {font-family: 'Jua', sans-serif;}
 
+.topHeader { width: 100%; margin-left: 345px;  margin-top: -39px;}
+.material-symbols-outlined { margin-top: 19px; margin-left: 310px; cursor: pointer; }
 input::placeholder {color: black; font-family: 'Jua', sans-serif;}
-#input {width: 250px; height:40px; margin: 7px 0 0 345px; border-radius: 10px;}
+
+.topHeader_image { margin-left: 1400px; margin-top: -38px;}
+.topHeader_image1 {margin-right: 15px;}
+.topHeader_image2 {margin-right: 15px;}
+.topHeader_image3 {margin-right: 15px;}
+
+
+
+#input {width: 250px; height:40px;border-radius: 10px;}
 
 /* nav */
 nav {position: absolute; top: 0; width: 100%; z-index: 10; top: 60px;; background-color: teal;}
@@ -14,3 +24,7 @@ nav a, a:visited {color: white;}
 nav ul {height: 60px; line-height: 60px; text-align: center;}
 nav li {display: inline-block; width: 150px; margin: 0 20px;}
 #topMenu > .active a {color: tomato; text-shadow: 1px 1px 2px black; font-size: larger; font-weight: bold;}
+
+
+https://www.mikaelareuben.com/
+https://www.camiferreol.com/

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>0623test</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <div class="header_inner" id="gnb">
+                <h1><img src="./images/top_logo.jpg"></h1>
+                <div class="header_top">
+                    <div class="zoom">
+                        <span>화면크기조정</span> 
+                        <a><img src="./images/zoomplus.jpg"></a>
+                        <a><img src="./images/zoommi.jpg"></a>
+                        <a><img src="./images/zoom100.jpg"></a>
+                    </div>
+                    <ul class="icon">
+                        <li><a href="#"><img src="./images/sns_icon_f.png"></a></li>
+                        <li><a href="#"><img src="./images/sns_icon_n.png"></a></li>
+                        <li><a href="#"><img src="./images/sns_icon_u.png"></a></li>
+                        <li><a href="#"><img src="./images/sns_icon_in.png"></a></li>
+                    </ul>       
+                </div>
+            </div>
+            <div class="header_secondline">
+                <div class="secondline_inner">
+                    <ul class="secondline_left">
+                        <li><a href="#">금융서비스</a></li>
+                        <li><a href="#">관심정보</a></li>
+                        <li><a href="#">교육/서비스</a></li>
+                        <li><a href="#">여행/쇼핑</a></li>
+                        <li><a href="#">일자리정보</a></li>
+                    </ul>
+                    <ul class="secondline_right">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- visual_area -->
+        <div class="visual_area">
+            <ul class="slider">
+                <li class="slide-one">
+                    <p>
+                        <img src="./images/main_visual_text1.png"><br>
+                        <img src="./images/main_visual_text2.png">
+                    </p>
+                </li>
+                <li class="slide-two">
+                    <p>
+                        <img src="./images/main_visual_text1.png"><br>
+                        <img src="./images/main_visual_text2.png">
+                    </p>
+                </li>
+                <li class="slide-three">
+                    <p>
+                        <img src="./images/main_visual_text1.png"><br>
+                        <img src="./images/main_visual_text2.png">
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- financial -->
+        <div id="financial">
+            <div class="financial_service">
+                <h2>금융서비스</h2>
+                <p>은퇴준비가 걱정되나요? 지금 바로 은퇴설계시스템을 통해 은퇴준비 상태를 점검하세요!</p>
+            </div>
+            <div class="top_service">
+                <div class="first_service">
+                    <div><img src="./images/finan_img1.jpg"></div>
+                    <div class="first_explain">
+                        <h3>고객맞춤<br>은퇴설계</h3>
+                        <p>현재은퇴준비상태점검<br>미래필요자금계사<br>포트폴리오제</p>
+                        <a href="#">바로가기</a>
+                    </div>
+                </div>
+                <div class="first_service">
+                    <div class="second_explain">
+                        <h3>시니어플러스<br>우리통장</h3>
+                        <p>우대금리, 수수료면제,<br>무료보이스피싱보험,온천무료이용권,<br>헬스케어서비스등</p>
+                        <a href="#">바로가기</a>
+                    </div>
+                    <div><img src="./images/finan_img1.jpg"></div>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_menu">
+                    <div>
+                        <h1><img src="images/bottom_logo.jpg"></h1>
+                        <ul>
+                            <li><a href="#">은행소개</a></li>
+                            <li><a href="#">영업점안내</a></li>
+                            <li><a href="#">전자민원접수</a></li>
+                            <li><a href="#">상품공시실</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                        <span>
+                            <select id="link" name="link" onchange="window.open(value, '_blank')">
+                                <option value="#">패밀리사이트 바로가기</option>
+                                <option value="#">패밀리사이트 바로가기</option>
+                                <option value="#">패밀리사이트 바로가기</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div>
+                        <address>Copyright WOORI BANK. All Rights Reserved.</address>
+                        <ul>
+                            <li><a href="#"><img src="images/sns_icon_f.png"></a></li>
+                            <li><a href="#"><img src="images/sns_icon_n.png" "></a></li>
+                            <li><a href="#"><img src="images/sns_icon_u.png"></a></li>
+                            <li><a href="#"><img src="images/sns_icon_in.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $('.slider').bxSlider({auto: true, pause: 3000});
+            });
+        </script>
+    </body>
+</html>

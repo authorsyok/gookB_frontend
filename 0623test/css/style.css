@@ -51,11 +51,11 @@ a, a:visited {text-decoration: none; color: black;}
 .financial_service { text-align: center; padding-bottom: 50px;}
 .financial_service h2 { font-size: 28px; font-weight: 700; padding-bottom: 20px;}
 
-.top_service { display: flex; justify-content: space-between;}
+.top_service {width: 1200px; display: flex; justify-content: space-between;}
 .top_service > div { width: 65%; background: rgb(223, 221, 221); display: flex;}
 .top_service > div > div { width: 50%; text-align: center; color: #fff;}
-.top_service > div > div h3 { font-size: 20px; padding-bottom: 20px;}
-.top_service > div > div p { padding-bottom: 20px; font-size: 13px; letter-spacing: -1px;}
+.top_service > div > div h3 { font-size: 24px; padding-bottom: 20px;}
+.top_service > div > div p { padding-bottom: 20px; font-size: 18px; letter-spacing: -1px;}
 .top_service > div > div img {width: 100%;}
 
 .first_explain { background-color:skyblue; padding: 40px;}

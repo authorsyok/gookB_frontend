@@ -80,7 +80,7 @@ video {width: 100%;}
 .movie .movie_top4 {background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/7nmU/image/7yzCudukAxvcL_M6dDEzZ5fV09Q.jpg); background-size: cover; width: 50%; height: 900px; }
 
 /* ent */
-.location_info {margin-top: 1000px; min-width: 1200px; background-color: #9cc15c; height: 655px; position: relative;}
+.location_info {margin-top: 830px; min-width: 1200px; background-color: #9cc15c; height: 655px; position: relative;}
 .location_info>img {position: absolute; top: 0;right: 50%;}
 .location_info>div {position: absolute; left: 56%; top: 160px;}
 .location_info>div strong { font-size: 40px; display: block; margin-bottom: 20px;}

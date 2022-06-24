@@ -3,8 +3,8 @@
 
 
 a {color: inherit; text-decoration: none;}
-body {font-family: 'Jua', sans-serif; padding: 0px; margin: 0px; }
-/* overflow-x: hidden; 우측여백 생길때 사용*/
+body {font-family: 'Jua', sans-serif; padding: 0px; margin: 0px; overflow-x: hidden;}
+/* overflow-x: hidden; */
 
 /* header*/
 #header {background-color: beige; height: 60px; }
@@ -38,10 +38,11 @@ video {width: 100%;}
 .about_explain { background-color: pink; float: left; width: 50%; padding-top: 30px;}
 
 /* album */
+.album {background-color: rgb(156, 223, 240); height: 700px;}
 .album .album1 {margin-left: 110px;}
 .album .album5 {margin-right: 110px;}
 
-.album h2 { text-align: center; font-size: 30px; padding-top: 40px; padding-bottom: 30px;}
+.album h2 { text-align: center; font-size: 30px; padding-top: 60px; padding-bottom: 60px;}
 .album ul.slider {margin: 0 auto; display: inline-block;}
 .album ul.slider > li {display: flex; justify-content: space-around;}
 .album ul.slider > li > a {display: inline-block;}
@@ -58,7 +59,33 @@ video {width: 100%;}
 .bx-controls-direction a.bx-prev:hover {background: url(../../3번째시험/images/left-r.png) no-repeat;}  
 .bx-controls-direction a.bx-next:hover  {background: url(../../3번째시험/images/right-r.png) no-repeat;} 
 
-.bx-pager {width: 100px; text-align: center; position: absolute; left: 50%;}
-.bx-pager .bx-pager-item {display: inline-block; text-indent: -9999px; width: 50%;}
+.bx-pager {width: 100px; text-align: center; position: absolute; left: 47%;}
+.bx-pager .bx-pager-item {display: inline-block; text-indent: -9999px; width: 33%;}
 .bx-pager .bx-pager-item > a {display: block; width: 12px; height: 12px;  margin: 0 20px 0; background-color: rgb(156, 148, 148); transform: rotate(45deg); transition: all 1s; border-radius: 50%;}
 .bx-pager .bx-pager-item > a.active {background-color: black;}
+
+/* drama */
+.drama {height: 2100px; background-color: beige;}
+.drama h2 { text-align: center; font-size: 30px; padding-top: 100px; padding-bottom: 80px;}
+.drama .drama_top2 { background-size: cover; width: 50%; height: 1000px;}
+.drama_bottom1 {background-image: url(); background-size: cover; width: 50%; height: 1000px; margin-top: -990px;}
+.drama_bottom2 {background-image: url(); background-size: cover; width: 50%; height: 1000px; margin-top: -990px;}
+
+/* movie */
+.movie {height: 1100px; background-color: teal;}
+.movie h2 {text-align: center; font-size: 30px; padding-top: 40px; padding-bottom: 60px;}
+.movie .movie_top1 {background-image: url(https://pbs.twimg.com/media/D16An8HUcAAW-0F.jpg:large); background-size: cover; width: 50%; height: 900px; }
+.movie .movie_top2 {background-image: url(https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201905/10/e4af2d93-2ab1-4670-bf88-f75e8e5cf4df.jpg); background-size: cover; width: 50%; height: 900px; }
+.movie .movie_top3 {background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxOTAzMjJfMTE2/MDAxNTUzMjYxNzIzNjEw.mUKNVMLZqkz_E5ULn6GydejAY2ZG1AWvP7aWVM_sAmYg.zelY1dZ7xfJ0363rDkZSDwaXwzks1Nrj6qGsMhKrLcEg.JPEG.smotherguy/%ED%81%AC%EA%B8%B0%EB%B3%80%ED%99%98D2RA_ZTUYAE7OpT.jpg?type=w2); background-size: cover; width: 50%; height: 900px; }
+.movie .movie_top4 {background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/7nmU/image/7yzCudukAxvcL_M6dDEzZ5fV09Q.jpg); background-size: cover; width: 50%; height: 900px; }
+
+/* ent */
+.location_info {margin-top: 1000px; min-width: 1200px; background-color: #9cc15c; height: 655px; position: relative;}
+.location_info>img {position: absolute; top: 0;right: 50%;}
+.location_info>div {position: absolute; left: 56%; top: 160px;}
+.location_info>div strong { font-size: 40px; display: block; margin-bottom: 20px;}
+.location_info>div p { font-size: 20px; margin-bottom: 20px;}
+.location_info>div ul {margin-bottom: 80px;}
+.location_info>div ul li { color: #fff; margin: 7px 0;}
+.location_info>div ul li span { display: inline-block; width: 110px;}
+.location_info>div a { display: inline-block; background-color: #414042; color: white; text-decoration: none; padding: 15px 40px;}

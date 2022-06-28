@@ -3,16 +3,17 @@
 
 * { margin: 0; padding: 0;}
 a {text-decoration  : none; color: black;}
+
 body {font-family: 'Jua', sans-serif; }
 
 /* main */
-#main_header .gnb_box{width: 1800px; height: 50px; margin: 0 auto; position: relative;}
-#main_header .gnb_box img {margin-left: -30px; margin-top: 5px;}
+#main_header .gnb_box{width: 1629px; height: 50px; margin: 0 auto; position: relative;}
+#main_header .gnb_box img {margin-left: -110px; margin-top: 5px;}
 #main_header .gnb_box .text01 {font-size: 22px; text-align: left;}
 #main_header .gnb_box .text02 {margin-left: 90px; color: rgb(151, 149, 149); text-align: left;}
-#main_header ul.gnb_depth1 { position: absolute; right: 0; top: 0;}
+#main_header ul.gnb_depth1 { position: absolute; right: 0; top: 0; margin-right: -90px;}
 #main_header ul.gnb_depth1 li { display: inline-block; margin-left: 20px;}
-#main_header ul.gnb_depth1 .depth1_links { display: inline-block; line-height: 55px;}
+#main_header ul.gnb_depth1 .depth1_links { display: inline-block; line-height: 55px; }
 
 #main_header .gnb_box2{width: 1800px; height: 50px; margin: 0 auto; position: relative;}
 #main_header ul.gnb_depth2 { position: absolute; right: 0; top: 0;}
@@ -32,7 +33,7 @@ body {font-family: 'Jua', sans-serif; }
 /* section_left */
 .section_top {padding-top: 30px; padding-bottom: 15px;}
 section span {padding-left: 65px; padding-top:40px; padding-bottom: 20px; font-size: 50px;}
-section .section_left .left01 img {width: 1130px; margin-left: 55px; position: relative; height: 800px;}
+section .section_left .left01 img {max-width: 1130px; margin-left: 55px; position: relative; height: 800px;}
 
 section .section_left .left02 img {width: 1130px; margin-left: 55px; height: 700px;}
 section .section_left .left03 div {padding-left: 55px; font-size: 31px; padding-bottom: 70px; line-height: 40px; padding-top: 15px;}
@@ -52,6 +53,7 @@ section .section_left div {padding-left: 55px; font-size: 31px; padding-bottom: 
 .more .rightwhite {border: 1px solid black; height: 20px; width: 120px; margin-left: 1370px; margin-top: -140px; padding: 25px 30px 25px 40px; font-size: 28px;}
 .more .rightblack {border: 1px solid black;  font-size: 28  px; width: 90px; height: 20px; background-color: black; color: white; padding: 25px 30px 25px 40px; margin-left: 1562px; margin-top: -72px;}
 .more .rightblack span {color: red; margin-left:-50px;}
+.more .rightwhite img:active {}
 
 /* intro-9 */
 .intro-9 ul .competitions {font-size: 50px; padding-bottom: 10px;}

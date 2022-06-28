@@ -36,16 +36,15 @@ section .section_left .left03 div {padding-left: 55px; font-size: 31px; padding-
 section .section_left div {padding-left: 55px; font-size: 31px; padding-bottom: 70px; line-height: 40px;}
 
 /* section_right */
-.section_right {margin-left: 1200px; background-color: teal; margin-top: -1500px; margin-bottom: 500px;}
-.section_right .title div {margin-top: -490px; margin-right: 52px; width: 600px; height: 60px; float: right;  font-size: 50px;}
-.section_right .title img {margin-top: -425px; margin-right: 50px; width: 600px; height: 440px; float: right;}
+.section_right {float: left; margin-left: 1200px;  margin-top: -1500px; margin-bottom: 500px;}
+.section_right .title div { margin-right: 52px; width: 600px; height: 60px; font-size: 50px;}
+.section_right .title img {margin-top: -425px; margin-right: 50px; width: 600px; height: 440px; float: left;}
 .section_right ul .competitions div {font-size: 50px; margin-top: 20px;}
 .section_right ul .competitions .plan01 p {margin-bottom: 50px; margin-left: 15px;}
 .section_right ul  .end01 div {margin-left: 15px; font-size: 28px; color: rgb(156, 156, 156);}
 .section_right ul  .end01 span {font-size: 22px; color: black;}
 
 /* more */
-.more_more {padding-top: 500px; background-color: teal;}
 .more .leftwhite {border: 1px solid black; height: 20px; width: 120px; margin-left: 500px; margin-top: 30px; padding: 25px 30px 25px 40px; font-size: 28px;}
 .more .leftwhite img {padding-left: 10px;}
 .more .leftblack {border: 1px solid black;  font-size: 28px; font-weight: bold; width: 90px; height: 20px; background-color: black; color: white; padding: 25px 30px 25px 40px; margin-left: 692px; margin-top: -72px;}

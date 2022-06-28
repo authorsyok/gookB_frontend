@@ -8,8 +8,8 @@ body {font-family: 'Jua', sans-serif; }
 /* main */
 #main_header .gnb_box{width: 1800px; height: 50px; margin: 0 auto; position: relative;}
 #main_header .gnb_box img {margin-left: -30px; margin-top: 5px;}
-#main_header .gnb_box .text01 {font-size: 22px; text-align: left;}
-#main_header .gnb_box .text02 {margin-left: 90px; color: rgb(151, 149, 149); text-align: left;}
+#main_header .gnb_box .text01 {font-size: 22px;}
+#main_header .gnb_box .text02 {margin-left: 90px; color: rgb(151, 149, 149);}
 #main_header ul.gnb_depth1 { position: absolute; right: 0; top: 0;}
 #main_header ul.gnb_depth1 li { display: inline-block; margin-left: 20px;}
 #main_header ul.gnb_depth1 .depth1_links { display: inline-block; line-height: 55px;}
@@ -18,7 +18,6 @@ body {font-family: 'Jua', sans-serif; }
 #main_header ul.gnb_depth2 { position: absolute; right: 0; top: 0;}
 #main_header ul.gnb_depth2 li { display: inline-block; margin-left: 20px;}
 #main_header ul.gnb_depth2 .depth1_links2 {font-size: 20px; height: 30px; line-height: 50px; padding-right: 10px;}
-#main_header ul.gnb_depth2 .depth1_links2 span {border-right: 1px solid black; padding-right: 25px;}
 
 #main_header .gnb_box3{width: 1800px; height: 50px; margin: 0 auto; position: relative; margin-bottom: 55px;}
 #main_header .gnb_box3 img {width: 370px; margin-top: 40px;}
@@ -30,39 +29,35 @@ body {font-family: 'Jua', sans-serif; }
 #main_header ul.gnb_depth3 .depth1_links3 {font-size: 26px; height: 30px; line-height: 150px;}
 
 /* section_left */
-.section_top {padding-top: 30px; padding-bottom: 15px;}
-section span {padding-left: 65px; padding-top:40px; padding-bottom: 20px; font-size: 50px;}
-section .section_left .left01 img {width: 1130px; margin-left: 55px; position: relative; height: 800px;}
-
-section .section_left .left02 img {width: 1130px; margin-left: 55px; height: 700px;}
-section .section_left .left03 div {padding-left: 55px; font-size: 31px; padding-bottom: 70px; line-height: 40px; padding-top: 15px;}
+section h1 {padding-left: 65px; padding-top:40px; padding-bottom: 20px; font-size: 50px;}
+section .section_left .left01 img {max-width: 1170px; margin-left: 55px; position: relative; height: 800px;}
+section .section_left .left02 img {width: 1134px; margin-left: 55px; height: 700px;}
+section .section_left .left03 div {padding-left: 55px; font-size: 31px; padding-bottom: 70px; line-height: 40px; padding-top: 100px;}
 section .section_left div {padding-left: 55px; font-size: 31px; padding-bottom: 70px; line-height: 40px;}
 
 /* section_right */
-.section_r {padding-left: 1000px; padding-top: 20px;}
-.section_right img{width: 600px; height: 800px; padding-left: 1220px; }
+.section_right {float: left; margin-left: 1200px;  margin-top: -1500px; margin-bottom: 500px;}
+.section_right .title div { margin-right: 52px; width: 600px; height: 60px; font-size: 50px;}
+.section_right .title img {margin-top: -425px; margin-right: 50px; width: 600px; height: 440px; float: left;}
+.section_right ul .competitions div {font-size: 50px; margin-top: 20px;}
+.section_right ul .competitions .plan01 p {margin-bottom: 50px; margin-left: 15px;}
+.section_right ul  .end01 div {margin-left: 15px; font-size: 28px; color: rgb(156, 156, 156);}
+.section_right ul  .end01 span {font-size: 22px; color: black;}
 
 /* more */
-.more .leftwhite {border: 1px solid black; height: 20px; width: 120px; margin-left: 450px; margin-top: 60px; padding: 25px 30px 25px 40px; font-size: 28px;}
+.more .leftwhite {border: 1px solid black; height: 20px; width: 120px; margin-left: 500px; margin-top: 30px; padding: 25px 30px 25px 40px; font-size: 28px;}
 .more .leftwhite img {padding-left: 10px;}
-.more .leftblack {border: 1px solid black;  font-size: 28px; width: 90px; height: 20px; background-color: rgb(0, 0, 0); color: white; padding: 25px 30px 25px 40px; margin-left: 642px; margin-top: -72px; margin-right: 10px;}
+.more .leftblack {border: 1px solid black;  font-size: 28px; font-weight: bold; width: 90px; height: 20px; background-color: black; color: white; padding: 25px 30px 25px 40px; margin-left: 692px; margin-top: -72px;}
 .more .leftblack img {padding-left: 10px;}
-.more .leftblack span {color: red; margin-left:-60px;}
+.more .leftblack span {color: red;}
+.more .rightwhite {border: 1px solid black; height: 20px; width: 120px; margin-left: 1370px; margin-top: -72px; padding: 25px 30px 25px 40px; font-size: 28px;}
+.more .rightblack {border: 1px solid black;  font-size: 28px; font-weight: bold; width: 90px; height: 20px; background-color: black; color: white; padding: 25px 30px 25px 40px; margin-left: 1562px; margin-top: -72px;}
+.more .rightblack span {color: red;}
 
-.more .rightwhite {border: 1px solid black; height: 20px; width: 120px; margin-left: 1370px; margin-top: -140px; padding: 25px 30px 25px 40px; font-size: 28px;}
-.more .rightblack {border: 1px solid black;  font-size: 28  px; width: 90px; height: 20px; background-color: black; color: white; padding: 25px 30px 25px 40px; margin-left: 1562px; margin-top: -72px;}
-.more .rightblack span {color: red; margin-left:-50px;}
 
-/* intro-9 */
-.intro-9 ul .competitions {font-size: 50px; padding-bottom: 10px;}
-.intro-9 ul {padding-left: 1250px; margin-top: -1600px; }
-.intro-9 ul span {color: rgb(172, 167, 167); font-size: 25px; }
-.intro-9 ul span div {padding-left: 20px; padding-bottom: 20px;}
-.intro-9 ul .no1:hover {background-color: rgb(223, 223, 223); cursor: pointer;}
-.intro-9 ul li p {font-size: 30px; padding-left: 20px; padding-top: 20px; padding-bottom: 50px;}
 
 /* footer */
-footer { margin: 0 auto; height: 200px; background-color: #292929; color: white; text-align: left; line-height: 1.5; }
+footer { margin: 0 auto; height: 200px; background-color: #292929; color: white; text-align: left; line-height: 1.5; margin-top: 300px;}
 footer ul {border-bottom: 1px solid #3a3939;}
 footer ul li { display: inline-block; padding: 20px 0;}
 footer ul li a {color: white; padding-left: 55px; padding-right: 25px;}

@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+a { color: #333; text-decoration: none; line-height: 1; }
+a:hover, a:focus, a:active { text-decoration: none; }
+a:visited { color: #333; }
+
+body { font-family: "맑은고딕"; font-size: 14px; color: #3d3d3d; line-height: 1.5;}
+.inner_container { /*공통 사용*/ width: 100%; max-width: 1200px; margin:0 auto;}
+
+/* header */
+.top_menu { border-top: 1px solid #ccc; }
+#gnb { display: flex; justify-content: space-between; height: 80px; align-items: center;}
+.top_gnb { display: flex;}
+.sns_menu { display: flex; padding-left: 30px; margin-left: 30px; position: relative;}
+.sns_menu::before { content: ""; display: block; width: 1px; height: 30px; background: #ddd; position: absolute; left:0; top:10px;}
+.sns_menu li:not(:last-child) {padding-right: 20px;}
+
+.zoomdiv { display: flex; align-items: center;}
+.zoomdiv span { line-height: 40px; padding-right: 20px;}
+.top_menu > div { display: flex; justify-content: space-between; height: 60px; align-items: center;}
+.top_menu > div ul {display: flex;}
+.menu_nav li { font-size: 18px; font-weight: 700; padding-right: 40px;}
+.member_menu li { padding-left: 20px; }
+/* header */
+
+/* main img */
+#visual { background: url("../images/main_visual.jpg") center; background-size: cover;   }
+#visual > div.inner_container { display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center; height: 600px; padding-bottom: 20px; padding-top: 180px;}
+/* main img */
+
+/* main */
+.main_title{ text-align: center; padding-bottom: 50px;}
+.main_title h2 { font-size: 28px; font-weight: 700; padding-bottom: 20px;}
+#main_content .inner_container {padding:70px 0;}
+.banner { display: flex; justify-content: space-between; }
+.banner > div { width: 48.5%; background: #ddd; display: flex;}
+.banner > div > div { text-align: center; width: 50%; color: #fff;}
+.banner > div > div h3 { font-size: 20px; padding-bottom: 20px;}
+.banner > div > div p { padding-bottom: 20px; font-size: 13px; letter-spacing: -1px;}
+.banner > div > div img { width: 100%}
+
+/* finan service */
+.finan_g1 { background: linear-gradient(125deg, #288bcc, #52b7fd); padding: 40px;}
+.finan_g2 { background: linear-gradient(125deg, #3247a2, #3f68b8); padding: 40px;}
+[class^="finan"] a { display: block; width: 120px; line-height: 36px; background: #064ca2; color: #fff; margin: 0 auto; border-radius: 4px;}
+.board { display: flex; justify-content: space-between;}
+.board > div { width: 48.5%;}
+.so_title { font-size: 22px;  font-weight: 800; color: #222; padding: 20px 0;}
+.so_title span { color:#288bcc; }
+.detail_btn { float:right;  display: block; width: 120px; border: 1px solid #ccc; line-height: 36px; border-radius: 4px; text-align: center; font-size: 13px;}
+.detail_btn:hover {border: 1px solid #333;}
+.board_tblack { border-top:2px solid #333; padding-top: 25px; display: flex;}
+.board_tblack > div:nth-child(1){width:40%;}
+.board_tblack > div:nth-child(1) img{width:100%;}
+.board_tblack > div:nth-child(2){ width:60%; padding: 20px;}
+.inner_qmenu { background: #e6e6e6; width:100%; height: 40px;}
+.inner_qmenu ul {display: flex;}
+.inner_qmenu ul li { width: 50%; text-align: center; padding-top: 10px; height: 40px;}
+.board_tblack > div:nth-child(1) .inner_qmenu ul li img { width: auto;}
+.inner_qmenu ul li:nth-child(1){border-right: 1px solid #ccc;}
+.board_tblack h4 {font-size: 20px;}
+.blueline { display: block; width:40px; height: 1px; background: #288bcc; margin:20px 0;}
+/* finan service */
+
+/* interest */
+#interest {background: #efefef;}
+.inter_menu { display: flex; justify-content: space-between;}
+.inter_plus { background: #3f69b8; display: block; width: 35%; font-size: 20px; border-radius: 4px; text-align: center; line-height: 64px; height: 64px; color: #fff; font-weight: 800;}
+.inter_plus span {color: #ffc820;}
+.inter_menu ul { width: 63%; display: flex; background: #fff; border-radius: 4px; border: 1px solid #ccc;}
+.inter_menu ul li { width: 20%; text-align: center; height: 64px; line-height: 64px;}
+.inter_menu ul li img { vertical-align: middle; margin-right: 5px;}
+.inter_menu ul li:not(:last-child){border-right: 1px solid #ccc;}
+.inter_menu ul li:hover {background: #eee;}
+.inter_info { display: flex; justify-content: space-between; padding-top: 20px;}
+.inter_info > div span { display: block; width:40px; height: 1px; background: #288bcc; margin:20px 0;}
+.inter_info > div p {color: #288bcc; padding-top: 30px;}
+.inter_info > div h3 {font-weight: 900; color: #222;}
+.inter_info > div {width:35%;}
+.inter_info > div img {width: 100%;}
+.inter_info > ul { width:63%; border-top: 2px solid #288bcc;  background: #fff;}
+.inter_info > ul li { line-height: 80px; border-bottom: 1px solid #ccc;}
+.inter_info > ul li span { display: inline-block;  width: 200px; padding-left: 30px; color: #288bcc; font-weight: 900;}
+/* interest */
+
+.edu_con {display: flex; justify-content: space-between;}
+.edu_con > div {width: 48.5%;}
+
+/* travel */
+#travel { background: url("../images/tra_bg.jpg") center center; background-size: cover;}
+.main_title.wh {color:#fff;}
+#travel ul { display: flex; justify-content: space-between;}
+#travel ul li { width: 32%; background: #fff; text-align: center; position: relative;}
+.brandl { position: absolute; top:-20px; right:-20px; z-index: 10;}
+#travel ul li p { width:70%; margin: 0 auto 20px; min-height: 40px;}
+#travel ul li a { display: block; width: 120px; height: 40px; line-height: 40px; border-radius: 4px; margin: 0 auto 20px; color: #fff;}
+/* travel */
+
+.colorred span {color: red;}
+.colorred a {background: red;}
+.colorblue span {color: #122e80;}
+.colorblue a {background: #122e80;}
+.colorsky span {color: #288bcc;}
+.colorsky a {background: #255bcc;}
+
+/* job */
+#job_info{ display: flex; justify-content: space-between;}
+.careers {width: 73%;}
+.internship {width: 23%;}
+.careers ul { display: flex; justify-content: space-between;}
+.careers ul li { border-top: 2px solid #288bcc; width: 32%; padding:20px;}
+.careers ul li:hover { box-shadow: 0 0 3px rgba(0,0,0,0.3);}
+.careers ul li div { text-align: center; padding-bottom: 20px;}
+.careers ul li span {color: #288bcc}
+/* job */
+
+/* internship */
+.internship { border:1px solid #ccc; margin-top: 70px;}
+.internship > div { height: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.internship > div:nth-child(2) { background: #eee; color: #589258;}
+.internship > div h4 { font-size: 20px; padding-bottom: 10px;}
+.internship > div a { color: #589258; position: relative;}
+.internship > div a::after { content: ""; display: block; width: 100%; height: 2px; background:#589258; position: absolute; top: 160%; left:0;}
+/* internship */
+
+/* happycall */
+#happycall { border:1px solid #288bcc; padding: 40px;}
+#happycall .so_title span:nth-child(2){ color: #8a76b4;}
+#happycall .so_title span:nth-child(3){ font-size: 12px; color: #3d3d3d;}
+#happycall td { padding-left:20px; height: 50px;}
+#happycall td:nth-child(odd) { width: 10%; font-weight: bold;}
+#happycall td:nth-child(2) {width: 30%;}
+#happycall table {width: 100%;}
+#happycall select { background: #fafafa; border:1px solid #ddd; padding: 0 20ppx;  height: 50px; border-radius: 5px;}
+#happycall textarea { background: #fafafa; border:1px solid #ddd; padding: 0 20ppx;  height: 50px; border-radius: 5px; width: 200px;}
+#happycall .happycal_btn { width:120px; display: block; background: #288bcc; text-align: center; color: #fff; border-radius: 5px; line-height: 50px; float:right;}
+#happycall input[type="text"] { width: 100px;  background: #fafafa; border:1px solid #ddd; padding: 0 20px;  height: 50px; border-radius: 5px;}
+#happycall #happycal_txt{ width: 400px;}
+
+/* partners */
+.partners ul { display: flex; justify-content: space-between; padding: 30px 0;}
+.partners ul li { width: 15.5%; border: 1px solid #ccc; padding: 10px; display: flex; justify-content: center; align-items: center;}
+.partners ul li img {width: 80%;}
+
+/* footer */
+.footer_copy { background: #f5f5f5; padding-top: 40px;}
+.footer_copy > div > div:nth-child(1) { border-bottom: 1px solid #ccc; display: flex; align-items: center; position: relative;}
+.footer_copy > div > div:nth-child(1) ul {display: flex;}
+.footer_copy > div > div:nth-child(1) ul li {padding:0 10px;}
+.footer_copy > div > div:nth-child(1) span { position: absolute; right: 0; top: 10px;}
+.footer_copy > div > div:nth-child(1) select { background: #fff; width: 240px; border: 1px solid #ccc; height: 30px; padding: 0 20px;}
+.footer_copy > div > div:nth-child(2) { display: flex; justify-content: space-between; align-items: center; padding:20px 0 40px;}
+.footer_copy > div > div:nth-child(2) ul {display: flex;}
+.footer_copy > div > div:nth-child(2) ul li {padding-left: 15px;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+a { color: #333; text-decoration: none;}
+
+/* header */
+#main_header .header_top { width: 1800px; height: 78px; line-height: 78px; margin: 0 auto; position: relative;}
+#main_header .header_top img {width: 200px; vertical-align: middle;}
+#main_header ul.headerp_top_list { position: absolute; right: 0; top: 0; }
+#main_header ul.headerp_top_list li { display: inline-block; margin-left: 40px;}
+#main_header ul.headerp_top_list .list_name { font-weight: bold; display: inline-block; line-height: 78px;}
+
+/* visual_area */
+.visual_area {  height: 750px; position: relative;}
+.visual_area li { height: 750px;}
+.visual_area li.slide-one {background: url(../images/slide/slide1.jpg); }
+.visual_area li.slide-two { background: url(../images/slide/slide2.jpg); }
+.visual_area li.slide-three { background: url(../images/slide/slide3.jpg); }
+
+/* bx controls */
+.bx-controls-direction a { position: absolute; opacity: 0; transition: all .3s; text-indent: -9999px;}
+.bx-pager { position: absolute;}
+.bx-pager div { display: inline-block;}
+.bx-pager div a { display: block; font-size: 0;}
+.bx-pager div a.active {transition: all .3s;}
+
+/* information */
+.information { width: 1200px; margin: 0 auto; padding: 80px 0;}
+.information h2 {text-align: center; font-size: 2.5em; font-weight: bold; padding-bottom: 20px;}
+.information div p {text-align: center; color: rgb(124, 124, 124); padding-bottom: 100px;}
+.information_list { display: table; width: 100%;}
+.information_list li { display: table-cell; text-align: center;}
+.information_list li img {transition: all .7s; cursor: pointer;}
+.information_list li:hover img {transform: scale(1.1);}
+.information_list li strong { display: block; margin: 40px 0 15px 0; font-weight: bold; color: rgb(124, 124, 124);}
+.information_list li p { font-size: 0.8em; line-height: 2; color: rgb(177, 177, 177); padding-bottom: 25px;}
+.information_list li span {border: 2px solid orange; border-left: none; border-right: none; color: orange; padding: 5px;} 
+
+/* consult */
+.consult { height: 100px; position: relative;}
+.consult div {height: 200px;}
+.consult div.consult_go {background: url("../images/bg.png");}
+.consult div.consult_go div { position: absolute; top: 30%; left: 50%; line-height: 1.4; transform: translateX(-50%); text-align: center; color: white;}
+
+.consult div.consult_go .consult_team {position: absolute; top: 150%;}
+.consult div.consult_go .consult_01{color: orange; border: 2px solid orange; border-radius: 40px; padding: 5px 30px; margin-right: 50px;}
+.consult div.consult_go .consult_02{color: orange; border: 2px solid orange; border-radius: 40px; padding: 5px 30px; margin-right: 50px; margin-left: 50px;}
+.consult div.consult_go .consult_03{color: orange; border: 2px solid orange; border-radius: 40px; padding: 5px 30px; margin-left: 50px;}
+
+/* section */
+.section h2 {font-size: 2em;}
+.section img {width: 100%;}
+.section .gallery {background-color: black; height: 550px;}
+.section .gallery h2 {color: white; text-align: center; padding: 70px 0 50px 0;}
+.section .gallery span {color: gray;}
+
+.section .gallery .wrap {margin-left: 440px;}
+.section .gallery .video {width: 500px; height: 300px; float: left; margin-right: 25px;}
+.section .gallery .image {width: 500px; height: 300px;  float: left; }
+
+.wrapped { max-width: 500px; }
+.flex { display: flex; flex-wrap: wrap; margin-top: 9px;}
+.content { min-height: 150px; flex-basis: 150px; flex-grow: 1; transition: all 1s; cursor: pointer;}
+.content:hover img {transform: scale(1.3);}
+
+/* inform */
+.inform_area { background-color: #f5ee89; padding: 50px 0 45px; line-height: 1.5; text-align: center;}
+.inform_area ul.gnb_depth1>li { display: inline-block; text-align: center; vertical-align: top; padding: 30px; border-right: 1px solid gray;}
+.gnb_depth2 { padding-top: 20px;}
+.gnb_depth2 .line {border-bottom: 1px solid black; padding:15px; font-weight: bold;}
+.gnb_depth2 .text {padding-top: 30px;}
+.depth1_links1 {font-weight: bold; margin-left: -220px;}
+.gnb_depth2 .qna {border: 1px solid black; width: 100px; margin-left: 65px;}
+.gnb_depth2 li {margin-top: -15px;}
+.gnb_depth2 .point {margin-bottom: 20px;}
+.depth1_links2 {font-weight: bold;}
+
+/* footer */
+footer { height: 300px; background-color: #181818; text-align: left; padding-left: 440px; padding-right: 440px; color: rgb(90, 90, 90); font-size: 10px;}
+footer .p1 { margin-top: 40px; margin-bottom: 10px; border-top: 1px solid rgb(97, 97, 97); padding-top: 50px;}
+footer .p2 { margin-top: 10px; margin-bottom: 10px;}
+.footer_menu {padding-top: 50px;}
+footer ul li {float: left; margin-left: 150px;}
+footer .p4 {float: right; margin-top: -50px;}
+

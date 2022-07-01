@@ -6,7 +6,6 @@ a {text-decoration  : none; color: black;}
 
 body {font-family: 'Jua', sans-serif; }
 
-
 /* main */
 #main_header .gnb_box{width: 1629px; height: 50px; margin: 0 auto; position: relative;}
 #main_header .gnb_box img {margin-left: -110px; margin-top: 5px;}
@@ -34,7 +33,7 @@ body {font-family: 'Jua', sans-serif; }
 /* section_left */
 .section_top {padding-top: 30px; padding-bottom: 15px;}
 section span {padding-left: 65px; padding-top:40px; padding-bottom: 20px; font-size: 50px;}
-section .section_left .left01 img {max-width: 1130px; margin-left: 55px; position: relative; height: 800px;}
+section .section_left .left01 img {width: 1130px; margin-left: 55px; position: relative; height: 800px;}
 
 section .section_left .left02 img {width: 1130px; margin-left: 55px; height: 700px;}
 section .section_left .left03 div {padding-left: 55px; font-size: 31px; padding-bottom: 70px; line-height: 40px; padding-top: 15px;}

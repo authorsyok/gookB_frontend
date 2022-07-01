@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .content {
+            min-height: 200px;
+            flex-basis: 150px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <div class="flex">
+            <div class="content" style="background-color: skyblue;">content1</div>
+            <div class="content" style="background-color: orange;">content2</div>
+            <div class="content" style="background-color: teal;">content3</div>
+            <div class="content" style="background-color: red;">content4</div>
+        </div>
+    </section>
+</body>
+</html>
